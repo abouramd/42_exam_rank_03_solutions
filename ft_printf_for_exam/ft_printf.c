@@ -6,7 +6,7 @@
 /*   By: abouramd <abouramd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/06 17:29:34 by abouramd          #+#    #+#             */
-/*   Updated: 2023/02/06 17:29:36 by abouramd         ###   ########.fr       */
+/*   Updated: 2023/04/20 20:30:09 by abouramd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	put_nbr(int *len, long n)
     if (0 > n)
     {
         *len += write(1, "-", 1);
-        n *= -1
+        n *= -1;
     }
 	if (n > 9)
 		put_nbr(len, n / 10);
